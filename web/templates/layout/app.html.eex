@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Productive. Reliable. Fast. A productive web framework that does not compromise speed and maintainability">
+
+    <title><%= if @page != nil do (@page[:name] <> " · ") end %>Phoenix Framework</title>
+
+    <link href="/imgs/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <%= render "header.html", conn: @conn, page: @page, tags: @tags %>
+
+    <div class="container" role="main">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+      <%= @inner %>
+
+    </div>
+
+    <%= render "footer.html", conn: @conn, page: @page %>
+
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

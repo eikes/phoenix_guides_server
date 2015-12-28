@@ -1,0 +1,66 @@
+body {
+  font-weight: 400;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.428571429;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif !important;
+}
+
+a {
+  color: #7f8c8d;
+}
+.docs-body a {
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+
+blockquote {
+    font-size: 16px;
+    color: #888;
+}
+
+footer {
+  border-top: 1px solid #f5f5f5;
+  margin-top: 50px;
+  padding: 10px 0;
+}
+
+/* Phoenix flash messages */
+.alert:empty {
+  display: none;
+}
+
+/* Code blocks */
+code.inline {
+  color: #000;
+  background-color: #F6F6F6;
+}
+
+pre {
+  background-color: #F6F6F6;
+}
+
+pre code.hljs {
+  padding: 0;
+  background-color: #F6F6F6;
+}
+
+/* Video size hack */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 54%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

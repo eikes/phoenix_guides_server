@@ -1,0 +1,4 @@
+[submodule "phoenix_guides"]
+	path = phoenix_guides
+	url = git@github.com:eikes/phoenix_guides.git
+	branch = phoenix_guides_server

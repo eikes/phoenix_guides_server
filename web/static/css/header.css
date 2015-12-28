@@ -1,0 +1,45 @@
+.header {
+  padding: 11px;
+  background-image: -webkit-radial-gradient(50% 50%, circle, #F67938 29%, #EF4734 120%);
+  background-image: radial-gradient(  circle at 50% 50%, #F67938 29%, #EF4734 120%);
+  color: #fff !important;
+}
+.navbar {
+  margin-bottom: 0;
+  display: inline-block;
+}
+.header h1.navbar-brand {
+  height: 40px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+.header h1.navbar-brand a {
+  text-indent: -99999px;
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/imgs/phoenixframework-logo-white@2x.png") !important;
+  background-size: 250px 34px;
+}
+.header .navbar-nav a:focus,
+.header .navbar-nav a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.header .navbar-nav > li > a {
+  color: #fff !important;
+  opacity: 0.6;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+}
+.header .navbar-nav > li > a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}

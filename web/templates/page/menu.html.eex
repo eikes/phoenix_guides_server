@@ -1,0 +1,18 @@
+<%= for topic <- @menu[:topics] do %>
+  <h4><%= topic[:name] %></h4>
+  <ul>
+    <%= for page <- topic[:documents] do %>
+      <li <%= if @current_page[:url] == page[:url] do %>class="active"<% end %>>
+        <%= if @tag == "HEAD" do %>
+          <a href="<%= page_path(@conn, :docs, page[:url]) %>">
+            <%= page[:name] %>
+          </a>
+        <% else %>
+          <a href="<%= page_path(@conn, :docs, page[:url], tag: @tag) %>">
+            <%= page[:name] %>
+          </a>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

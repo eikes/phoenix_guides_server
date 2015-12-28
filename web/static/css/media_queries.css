@@ -1,0 +1,26 @@
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 767px) {
+  .header h1.navbar-brand {
+    float: none;
+  }
+  /* Remove the padding we set earlier */
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  header .nav {
+    clear: both;
+  }
+}

@@ -1,0 +1,10 @@
+<div class="container container-footer">
+  <footer>
+    <a href="https://dockyard.com/phoenix-consulting">
+      <img width="200" src="/imgs/dockyard-logo.png">
+    </a>
+    <span class="subheader-link" style="display: inline-block; font-weight: 300; vertical-align: -2px;">
+      DockYard offers expert <a href="https://dockyard.com/phoenix-consulting">Phoenix consulting</a> for your projects
+    </span>
+  </footer>
+</div>
